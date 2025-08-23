@@ -5,7 +5,7 @@ Wazuh for SIEM & XDR, TheHive for case management and Suffle for SOAR capabiliti
 
 ## Showcase of data flow
 
-![SOC-Automation_project_dataflow](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC_Automation/01-SOC_Automation.png?raw=true)
+![SOC-Automation_project_dataflow](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/02-SOC_Automation/02-SOC_Automation.png?raw=true)
 
 
 ## Description
