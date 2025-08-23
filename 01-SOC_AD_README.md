@@ -25,3 +25,5 @@ To simulate a real SOC setup, I will deploy and configure the following virtual 
 * 1 Wazuh server running on Ubuntu (to collect and analyze logs, detect anomalies, and generate alerts)
 
 * 1 TheHive server running on Ubuntu (to manage alerts and incidents, track investigations, and assign tasks)
+
+
