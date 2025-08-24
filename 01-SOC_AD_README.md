@@ -12,13 +12,16 @@ Tools used in this project:
 
 ## Description
 
+The goal of this project is to create a real-world simulation of a SOC analyst’s role. In this scenario, an attacker machine successfully logs into a test system, triggering a playbook that requires the SOC analyst to assess whether the activity represents a legitimate threat. 
+Once the primary objective is achieved, `additional automation will be integrated` to enhance the workflow.
 
 ## Setup
 
 Here are the steps of project:
-1. Setting up 2 windows servers and 1 Ubuntu server in Vultr 
+1. Setting up 2 windows servers and 1 Ubuntu server in `Vultr`
 2. Configuring and protecting them with firewall so I will only be able to access them
 3. Configuring main Win Server (Sambol.local) Acive directory and promoting it to domain controller
+4. Joining Test machine to `Sambol` domain
 
 
 
