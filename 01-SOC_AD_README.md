@@ -22,6 +22,22 @@ Here are the steps of project:
 2. Configuring and protecting them with firewall so I will only be able to access them
 3. Configuring main Win Server (Sambol.local) Acive directory and promoting it to domain controller
 4. Joining Test machine to `Sambol` domain
+5. Instaling splunk on ubuntu server
+    * Instaling is done by downloading splung .deb file and runing it
+    * After that running /opt/splunk/bin# ./splunk start command to accept user rights
+    * This triggers the Ramining configuration
+    * Also port 8000 needs to be anabled in ubunto firewall with command: 
+        ```sh
+        ufw allow 8000
+        ```
 
 
 
+## Splunk
+
+Steps that I made for configuring splunk:
+
+* Instaling add-on for windows
+* Added custom index
+* Also added forwarding default port 9997
+* install universal forwarder
