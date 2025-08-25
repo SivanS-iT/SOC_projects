@@ -41,3 +41,8 @@ Steps that I made for configuring splunk:
 * Added custom index
 * Also added forwarding default port 9997
 * install universal forwarder
+
+
+## Errors along the way
+
+* Currently I have a problem that my test windows server is not sending or doesn't have connection to Ubuntu server where the Splunk is. So I am not getting any telemetry from windows logs
