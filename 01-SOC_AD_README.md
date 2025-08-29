@@ -46,3 +46,6 @@ Steps that I made for configuring splunk:
 ## Errors along the way
 
 * Currently I have a problem that my test windows server is not sending or doesn't have connection to Ubuntu server where the Splunk is. So I am not getting any telemetry from windows logs
+    ```
+    FIX: with a lot if failed tries, deleting/installing universal forwarder as well as configuring outputs.config file and testing connection. Problem was that I haven't login to splunk as my universal forwarder required my credentials.
+    ```
