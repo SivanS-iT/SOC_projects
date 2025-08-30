@@ -15,32 +15,28 @@ Tools used in this project:
 The goal of this project is to create a real-world simulation of a SOC analyst’s role. In this scenario, an attacker machine successfully logs into a test system, triggering a playbook that requires the SOC analyst to assess whether the activity represents a legitimate threat. 
 Once the primary objective is achieved, `additional automation will be integrated` to enhance the workflow.
 
-## Setup
+## Setup and overview
 
 Here are the steps of project:
-1. Setting up 2 windows servers and 1 Ubuntu server in `Vultr`
-2. Configuring and protecting them with firewall so I will only be able to access them
-3. Configuring main Win Server (Sambol.local) Acive directory and promoting it to domain controller
-4. Joining Test machine to `Sambol` domain
-5. Instaling splunk on ubuntu server
-    * Instaling is done by downloading splung .deb file and runing it
-    * After that running /opt/splunk/bin# ./splunk start command to accept user rights
-    * This triggers the Ramining configuration
-    * Also port 8000 needs to be anabled in ubunto firewall with command: 
+1. Set up two Windows servers and one Ubuntu server in `Vultr`.
+2. Configure and protect them with a firewall so only I have access to them.
+3. Configure the Active Directory of the main Windows server (Sambol.local) and promote it to a domain controller.
+4. Join Test machine to `Sambol` domain
+5. Install Splunk on the Ubuntu server
+    * Installation is done by downloading and running the Splunk .deb file.
+    * Then run the command /opt/splunk/bin# ./splunk start to accept user rights.
+    * This starts the remaining configuration.
+    * Port 8000 must also be enabled in the Ubuntu firewall with the following command:
         ```sh
         ufw allow 8000
         ```
-
-
-
-## Splunk
-
-Steps that I made for configuring splunk:
-
-* Instaling add-on for windows
-* Added custom index
-* Also added forwarding default port 9997
-* install universal forwarder
+6. Install the Universal Forwarder on both Windows servers (domain controller and test computer) and configure it
+7. Test whether the Windows servers send events through the Universal Forwarder to the Ubuntu server where Splunk is installed
+8. Query event data in the Splunk dashboard such as:
+    ```
+        index="sambol-ad" EventCode=4624 Source_Network_Address=* Source_Network_Address!="-"
+    ```
+9. Test various different search filters
 
 
 ## Errors along the way
