@@ -46,7 +46,7 @@ Here are the steps of project:
     index="sambol-ad" EventCode=4624 Source_Network_Address=* Source_Network_Address!="-" Source_Network_Address!="86.*"
     |stats count by _time, ComputerName,Source_Network_Address,user,Logon_Type
     ```
-
+    * This search query looks for `Source_Network_Address` that is different from my public IP address that starts with 86.x.x.x and displays it in a user frendly way
 
 
 ## Project images
