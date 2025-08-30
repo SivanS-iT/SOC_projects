@@ -38,6 +38,13 @@ Here are the steps of project:
     ```
 9. Test various different search filters
 
+## Project images
+
+![SOC-Automation_project_Query](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-AD-SplunkQuery.png?raw=true)
+```
+Screenshot of my dashboard in splunk executing login filter query
+```
+
 
 ## Errors along the way
 
