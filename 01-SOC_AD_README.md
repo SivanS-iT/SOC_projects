@@ -1,20 +1,30 @@
-# SOC with Active directory project
+# SOC with Active directory
 
-Tools used in this project:
-* Splunk for SIEM, Slack for case management and Suffle for SOAR capabilities. 
-* Small active directory environment with user to perform authentication
-* 3 VM-s are created in the cloud using Vultr
-
-
-## Showcase of data flow
-
-![SOC-Automation_project_dataflow](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-SOC_AD_Dataflow.png?raw=true)
+<h4>
+  <p><strong>Table of Contents</strong></p>
+  <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#showcase-of-data-flow">Showcase of data flow</a></li>
+    <li><a href="#setup-and-overview">Setup and overview</a></li>
+    <li><a href="#project-images">Project images</a></li>
+    <li><a href="#errors-along-the-way">Errors along the way</a></li>
+  </ol>
+</h3>
 
 
 ## Description
 
-The goal of this project is to create a real-world simulation of a SOC analyst’s role. In this scenario, an attacker machine successfully logs into a test system, triggering a playbook that requires the SOC analyst to assess whether the activity represents a legitimate threat. 
+Tools used in this project:
+* `Splunk` for SIEM, Slack for case management and `Suffle` for SOAR capabilities. 
+* Small active directory environment with user to perform authentication
+* 3 VM-s are created in the cloud using Vultr
+
+The goal of this project is to create a real-world simulation of a SOC analyst’s role. In this scenario, an "attacker machine" successfully logs into a test system, triggering a playbook that requires the SOC analyst to assess whether the activity represents a legitimate threat. 
 Once the primary objective is achieved, `additional automation will be integrated` to enhance the workflow.
+
+## Showcase of data flow
+
+![SOC-Automation_project_dataflow](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-SOC_AD_Dataflow.png?raw=true)
 
 
 ## Setup and overview
