@@ -73,3 +73,12 @@ Here are the steps of project:
     FIX: with a lot if failed tries, deleting/installing universal forwarder as well as configuring outputs.config file and testing connection. Problem was that I haven't login to splunk as my universal forwarder required my credentials.
     ```
 * Error authenticating Slack with shuffle "Shuffle SOAR Bot could not be installed". I am trying to resolve this issue.
+    ```
+    FIX: There are so many things to consider authenticating `Slack` with Shuffle. I spent lot of time just fixing this easy "error".
+    Here are the documentations that I used:
+    https://docs.slack.dev/reference/methods/oauth.v2.access/
+    https://docs.slack.dev/legacy/legacy-authentication/legacy-sign-in-with-slack/#button_setup
+    https://github.com/hystax/optscale/issues/204
+    https://shuffler.io/apps/Slack/
+    https://shuffler.io/docs/apps#authentication
+    ```
