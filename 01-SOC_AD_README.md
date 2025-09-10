@@ -82,3 +82,7 @@ Here are the steps of project:
     https://shuffler.io/apps/Slack/
     https://shuffler.io/docs/apps#authentication
     ```
+* There’s a bug when using `User input` as a trigger to send me an email for approval if the login was unauthorized. If approved, the button should allow the rest of the workflow to execute, but it doesn’t. This function should be simple, but Shuffle makes even easy functions unusable.
+    ```
+    FIX: Currently no fix
+    ```
