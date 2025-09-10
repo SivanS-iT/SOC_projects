@@ -57,6 +57,14 @@ Here are the steps of project:
     |stats count by _time, ComputerName,Source_Network_Address,user,Logon_Type
     ```
     * This search query looks for `Source_Network_Address` that is different from my public IP address that starts with 86.x.x.x and displays it in a user frendly way
+11. Create `shuffle` workflow with trigger (Splunk) alert that sends notification to `Slack`. In Shuffle workflow there is a plugin that connects to my `Domain controller server` and enables me to execute different actions to `unauthorized user` like disable user.
+    
+    Shuffle workflow steps:
+    1. Splunk triggers alert
+    2. Notification is sent to Slack
+    3. User input trigger sends email to SOC analyst
+    4. If unauthorized access is approved disable user throughout Windows server domain controller
+    5. Send notification to slack that user is disabled
 
 
 ## Project images
@@ -64,6 +72,18 @@ Here are the steps of project:
 `1. Screenshot of my dashboard in splunk executing login filter query`
 
 ![SOC-Automation_project_Query](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-AD-SplunkQuery.png?raw=true)
+
+<br><br/>
+
+`2. Screenshot of my workflow in Shuffle`
+
+![SOC-Automation_Shuffle_Workflow](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-Shuffle-workflow.png?raw=true)
+
+<br><br/>
+
+`3. Screenshot of Slack test notification`
+
+![SOC-Automation_Slack_Notification](https://github.com/SivanS-iT/SOC_projects/blob/main/Images/01-SOC-AD/01-Slack-Notify.png?raw=true)
 
 
 ## Errors along the way
